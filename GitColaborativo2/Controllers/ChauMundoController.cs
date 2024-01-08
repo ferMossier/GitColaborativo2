@@ -7,9 +7,9 @@ namespace GitColaborativo2.Controllers
     public class ChauMundoController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetChauMundo()
+        public IActionResult GetChauMundo( string name )
         {
-            return Ok( new { Data = "Chau Mundo" } );
+            return Ok( new { Data = $"Chau Mundo, soy {name} y me tengo que ir" } );
         }
     }
 }
