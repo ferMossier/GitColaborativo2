@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace GitColaborativo2.Controllers
+﻿namespace GitColaborativo2.Controllers
 {
     [Route( "api/[controller]" )]
     [ApiController]
@@ -9,6 +7,7 @@ namespace GitColaborativo2.Controllers
         [HttpGet]
         public IActionResult GetHolaMundo( string name )
         {
+            //Comentario de prueba
             return Ok( new { data = $"Hola Mundo, soy {name}." } );
         }
     }
