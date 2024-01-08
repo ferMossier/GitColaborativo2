@@ -7,9 +7,9 @@ namespace GitColaborativo2.Controllers
     public class HolaMundoController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetHolaMundo()
+        public IActionResult GetHolaMundo( string nombre )
         {
-            return Ok( new { data = "Hola Mundo" } );
+            return Ok( new { data = $"Hola Mundo, soy {nombre}" } );
         }
     }
 }
